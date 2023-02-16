@@ -27,7 +27,7 @@ connect()
 try {
   app.use(express.urlencoded({ extended: true }))
   app.use(express.json())
-  app.use('/', require('./routes'))
+  app.use('/', require('./src/routes'))
 } catch (e) {
   console.error('Erreur: ' + JSON.stringify(e))
 }
